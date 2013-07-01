@@ -1,7 +1,26 @@
-$(document).ready(function() {
-  // This is called after the document has loaded in its entirety
-  // This guarantees that any elements we bind to will exist on the page
-  // when we try to bind to them
+$(document).ready(function(){
 
-  // See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
+  $(document).on('keyup', function(event) {
+
+    if (event.keyCode == 83){
+      var position1 = parseInt($('#monster1').css('left'));
+      if(position1 <= 60) {
+        alert("Monster wins!");
+        $(document).unbind('keyup');
+      }
+      $("#monster1").animate({left: "-=40px"}, 80);
+
+    }
+    else if (event.keyCode == 74) {
+      var position2 = parseInt($('#freeze').css('left'));
+      if (position2 <= 60) {
+        alert("Freeze wins!");
+        $(document).unbind('keyup');
+      }
+      $("#freeze").animate({left: "-=40px"}, 80);
+    }
+
+  });
 });
+
+
