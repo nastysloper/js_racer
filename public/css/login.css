@@ -1,0 +1,40 @@
+body {
+  background-color: rgb(202, 203, 131);
+
+}
+
+.container {
+  position: relative;
+  top: 15%;
+  margin: auto;
+  width: 500px;
+  height: 500px;
+  background-color: rgb(77, 76, 37);
+  border-radius: 10px;
+}
+
+h1 {
+  position: relative;
+  top: 3em;
+  text-align: center;
+  color: rgb(15, 78, 94);
+  font-family: 'Special Elite', cursive;
+}
+
+h2 {
+  margin-bottom: 5px;
+}
+
+#login {
+  position: relative;
+  top: 15%;
+  left: 10%;
+  text: #ffffff;
+  text-shadow: 1px 0 #999;
+}
+
+.pword {
+  position: relative;
+  left: 19%;
+}
+

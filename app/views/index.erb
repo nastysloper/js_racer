@@ -1,23 +1,44 @@
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" href="/css/login.css">
+  <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <h1 id='dash-name'>Welcome to Monster Racer!</h1>
 <div class="container">
-  <h1>Welcome to Sinatra!</h1>
-  <p>Hello, world!</p>
+  
+  <div id='login'>
+    <h2>Login</h2>
+      <form action='/login' method='POST'>
+        <label>Name</label><label class='pword'>Password</label><br>
+        <input type='text' name='user[name]'>
 
-  <table>
-    <tr>
-      <th>File Description</th>
-      <th>File Location</th>
-    </tr>
-    <tr>
-      <td>This view file</td>
-      <td><code><%= __FILE__.gsub(Sinatra::Application.root, '') %></code></td>
-    </tr>
-    <tr>
-      <td>The layout file</td>
-      <td><code><%= File.expand_path('../layout.erb', __FILE__).gsub(Sinatra::Application.root, '') %></code></td>
-    </tr>
-    <tr>
-      <td>The current controller</td>
-      <td><code><%= File.expand_path('../../controllers/index.rb', __FILE__).gsub(Sinatra::Application.root, '') %></code></td>
-    </tr>
-  </table>
+        <input type='password' name='user[password]'>
+        <input type=submit value='Submit'>
+      </form
+  </div>
+
+  <div id='signup'>
+    <h2>Sign up</h2>
+      <form action='/signup' method='POST'>
+        <label>Name</label><label class='pword'>Password</label> <br>
+        <input type='text' name='user[name]'>
+        <input type='password' name='user[password]'>
+        <input type=submit value='Submit'>
+      </form
+  </div>
+ 
+
+
 </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
